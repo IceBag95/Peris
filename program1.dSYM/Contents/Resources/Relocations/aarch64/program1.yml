@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/panagiotispagonis/Documents/Peris/program1'
+relocations:     []
+...

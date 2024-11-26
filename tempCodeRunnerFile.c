@@ -13,23 +13,18 @@ int main() {
     } while ( x <= 0 );
 
     int counter = 1;
-    int i = 2;
-    while (counter <= x) {
-        int is_prime = 1;
-
-        for (int j = 2; j <= sqrt(i); j++){
-
+    printf("\nPrime #%d: %d",counter, 2);
+    for (int i = 2; i < x; i++) {
+        int is_not_prime = 1;
+        for (int j = 2; j < sqrt(i); j++){
             if (i % j == 0) {
-                is_prime = 0;
+                is_not_prime = 0;
             }
         }
-
-        if (is_prime == 1) {
+        if (!is_not_prime) {
             printf("\nPrime #%d: %d",counter, i);
             counter++;
         }
-
-        i++;
     }
 
     return 0;
