@@ -28,11 +28,6 @@ int main() {
         // Το πολ/σιο του 10 που δεν μπορεσε να διαιρέσει τον x σταμάτησε την επανάληψη.
         // Για να συνεχίσω, δεν χρειάζομαιπολ/σιο του 10 που σταμάτησε την επανάληψη, αλλά το ακριβώς προηγούμενο.
         divisor = divisor / 10;
-        
-        printf("\nGiven number: %d", x);
-        printf("\nNumber has %d digits", digit_counter);
-        printf("\nMax divisor: %d", divisor);
-        printf("\n");
 
         
         int sum = 0; // αρχίζω ένα άθροισμα για να προσθέσω όλα τα ψηφία που θα υπολογίζω
@@ -48,13 +43,7 @@ int main() {
             sum = sum + (x / divisor);
             x = x % divisor;
             divisor = divisor / 10;
-            printf("\nIteration: %d", i+1);
-            printf("\nDigit to be added to sum: %d", (x / divisor));
-            printf("\n");
-        }     
-
-        printf("\n\nCurrent sum of digits: %d", sum);
-        printf("\n\n");
+        }
 
         x = sum;
     }
